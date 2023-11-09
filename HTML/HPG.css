@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo img{
+    width: 64%;
+}
+.navbar{
+    display: flex;
+    background-color: black;
+}
+
+.navlist{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navlist li{
+    list-style: none;
+    padding: 30px;
+}
+.navlist li a{
+    text-decoration: none;
+    color: white;
+}
+.rightnav{
+    width: 50%;
+    text-align: right;
+}
