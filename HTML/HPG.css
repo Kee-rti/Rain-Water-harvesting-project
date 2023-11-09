@@ -3,11 +3,11 @@
     padding: 0;
 }
 .logo img{
-    width: 64%;
+    width: 100%;
 }
 .navbar{
-    display: flex;
-    background-color: black;
+    display:flex;
+    background-color: #192523;
 }
 
 .navlist{
@@ -23,8 +23,50 @@
 .navlist li a{
     text-decoration: none;
     color: white;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navlist li a:hover{
+    text-decoration: none;
+    color: #74CEFF;
 }
 .rightnav{
     width: 50%;
     text-align: right;
+    padding: 30px;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.btnsm{
+    padding: 6px 7px;
+    border-radius: 20px;
+    color: white;
+    background-color: #74CEFF;
+    background: 2px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.mainbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg1{
+    width:100%;
+}
+.head{
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 30%;
 }
