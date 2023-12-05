@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainwater Harvesting</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #333333;
+            margin:0;
+            padding:0;
+        
+            
+        }
+        .header{
+            background-color: #FF5733;
+            text-align: center;
+            font-size: 30px;
+            text-shadow: 50%;
+            color:#333333;
+            width: 100%;
+            height:auto;
+            padding:90px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiWMRoaIFpO7lQRYBhZAlmj9XtAk3ka-USSEyaUovbVK8g-el2_7PGe0ok3v5OL0Ou9ts&usqp=CAU");
+        
+        }
+        .container{
+            max-width: 800px;
+            margin:0 auto;
+            padding:20px;
+            color: aliceblue;
+            background-color: #333333;
+            box-shadow: 0 0 10px rgba(173, 88, 2, 0.1);
+        }
+        .box{
+            border:5px solid #333333;
+            padding:10px;
+            margin:40px;
+            width:300px;
+            background-color: orange;
+            float: left;
+
+        }
+        .box2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .image-container{
+            float:right;
+            margin:10px;
+            height: 100px;
+            width:50px;
+        }
+        .horizontal-line{
+            width: 50%;
+            height:5px;
+            background-color: #FF5733;
+            margin: 30px auto;
+        }
+        .header2{
+            background-color: #FF5733;
+            color:aliceblue;
+            text-align: center;
+            text-decoration: wavy;
+        }
+        .image-container2{
+            display:flex;
+
+        }
+        .image-container22{
+            margin-right: 10px;
+            padding: 30px;
+        }
+        .figcaption{
+            color:aliceblue;
+            font-size: 30px;
+            text-align: center;
+        }
+        .box3{
+            border:5px solid #333333;
+            padding:10px;
+            margin:40px;
+            width:auto;
+            background-color: orange;
+        }
+        .footer{
+            background-color:black;
+            color: aliceblue;
+            padding: 2px;
+            text-align: center;
+            width: 200%;
+            height: 100%;
+            left: auto;
+            right:auto;
+            transform: translate(0,55%);
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <div class="header">
+            <h1><em>Different methods of Rainwater Harvesting.</em></h1>
+        </div>    
+    </div>
+    <div class="container">
+        <h2><u>There are several methods of rainwater harvesting,some of them are mentioned below:</u></h2>
+    </div>
+    <div class="image-container2">
+        <div class="image-container22">
+    <img src="data:image/jpeg;base64,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" height="300" width="400" alt="roof-based rainwater harvesting">
+    <div class="figcaption">
+        Roof-Based Rainwater Harvesting
+    </div>
+    </div>
+    <div class="image-container22">
+        <img src="https://4.imimg.com/data4/VO/HX/MY-34335103/surface-runoff-harvesting-500x500.jpg" height="300" width="400" alt="surface runoff harvesting">
+        <div class="figcaption">
+            Surface-Runoff Harvesting
+        </div>
+    </div>
+    <div class="image-container22">
+        <img src="https://www.freshwatersystems.com/cdn/shop/articles/two-underground-storage-tanks_1024x1024.jpg?v=1678115968" height="300" width="400" alt="in ground storage">
+        <div class="figcaption">
+            In-Ground Storage
+        </div>
+    </div>
+    </div>
+    <div class="image-container2">
+    <div class="image-container22">
+        <img src="https://fullserviceaquatics.com/wp-content/uploads/2012/02/du4.jpg" height="300" width="400" alt="rain gardens">
+        <div class="figcaption">
+            Rain Gardens
+        </div>
+    </div>
+    <div class="image-container22">
+        <img src="https://www.researchgate.net/publication/286118230/figure/fig1/AS:389121357959169@1469785169148/Examples-of-check-dams-in-the-European-Alps-a-evenly-spaced-sequence-of-15m-high.png" height="300" width="400" alt="check dams">
+        <div class="figcaption">
+            Check Dams
+        </div>
+    </div>
+    <div class="image-container22">
+        <img src="data:image/jpeg;base64,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" height="300" width="400" alt="fog and dew collection">
+        <div class="figcaption">
+            Fog and Dew Collection
+        </div>
+    </div>
+    </div>
+    <div class="horizontal-line">
+        <p></p>
+    </div>
+    <div class="box2">
+        <div class="box3">
+        <h1><b><u>1.Roof-Based Rainwater Harvesting:</u></b></h1>
+        <p>
+            This technique is used for collecting and storing rainwater that falls on the roof for later use. The rainwater that has fallen on the roof of houses or buildings is collected in storage or underground tanks through the help of pipes. This also helps in recharging the groundwater levels.
+        </p>
+        <p>
+            This method requires some components which are listed below:
+        </p>
+        <ul>
+            <li>Roof Catchment Surface</li>
+            <li>Gutters and Downspouts</li>
+            <li>Leaf Screens</li>
+            <li>First Flush Diverters</li>
+            <li>Storage Tanks</li>
+            <li>Overflow System</li>
+            <li>Purification and Filtration</li>
+            <li>Distribution System</li>
+            <li>Usage Points</li>
+        </ul>
+        </div>
+        <div class="box3">
+            <h1><b><u>2.Surface-Runoff Harvesting</u></b></h1>
+            <p>
+                This method of rainwater harvesting involves collection and storage of rainwater flowing over the ground surface during rainfall.It also includes the treatment or purification of the stored rainwater.
+            </p>
+            <p>
+                The required components for this method are listed below:
+            </p>
+            <ul>
+                <li>Catchment Areas</li>
+                <li>Contour Trenches or Swales</li>
+                <li>Percolation Pits or Recharge Wells</li>
+                <li>Check Dams</li>
+                <li>Gully Plugs</li>
+                <li>Contour Bunds</li>
+                <li>Retention Ponds or Tanks</li>
+                <li>Filtering and Sedementation</li>
+            
+            </ul>
+        </div>
+        <div class="box3">
+            <h1><b><u>3.In-Ground Storage</u></b></h1>
+            <p>
+                In this method several water tanks with huge capacity are stored under the ground-level for the purpose of collecting and storing rainwater in underground structures for further usage.
+            </p>
+            <p>
+                The components required in this method are nearly same as that of Roof-Based rainwater harvesting and are listed below: 
+            </p>
+            <ul>
+                <li>Catchment Area</li>
+                <li>Gutters and Downspouts</li>
+                <li>First Flush Diverters</li>
+                <li>Filtering System</li>
+                <li>In-Ground Storage Tanks</li>
+                <li>Overflow System</li>
+                <li>Access Points</li>
+                <li>Pumps and Distribution System</li>
+                <li>Usage Points</li>
+            
+            </ul>
+        </div>
+        <div class="box3">
+            <h1><b><u>4.Rain Gardens</u></b></h1>
+            <p>
+                These are the landscaped areas designed for capturing and managing the rainwater runoff which provides an aesthetically pleasing environment as well as environmental benefits.
+            </p>
+            <p>
+                Rain gardens require several components which are listed below:
+            </p>
+            <ul>
+                <li>Entry Points for Water</li>
+                <li>Inflow Area</li>
+                <li>Depression or Basin</li>
+                <li>Drainage System</li>
+                <li>Flow Channels</li>
+                <li>Pebble or Gravel Layers</li>
+                <li>Well Draining and Amended Soils</li>
+                <li>Wildlife Friendly Features</li>
+            </ul>
+        </div>
+        <div class="box3">
+            <h1><b><u>5.Check Dams</u></b></h1>
+            <p>
+                Check dams are structures designed for several purposes which includes regulation in flow of water in streams or rivers ,ersosion control,reduction in sedimentation as well as water conservation.
+            </p>
+            <p>
+                The different components required for the Check dams are listed below:
+            </p>
+            <ul>
+                <li>Solid Foundation</li>
+                <li>Rock Fills</li>
+                <li>Concrete</li>
+                <li>Gabions(Wire baskets filled with stones)</li>
+                <li>Vegetative Cover</li>
+                <li>Overflow Channel</li>
+                <li>Sediment Trapping Devices</li>
+                <li>Access Points for maintainence</li>
+            </ul>
+        </div>
+        <div class="box3">
+            <h1><u><b>6.Fog and Dew Collection</b></u></h1>
+            <p>
+                The collection of fogs and dews includes harnessing the atmospheric moisture for several purposes and one of the main purpose is to supply water in arid regions.
+            </p>
+            <p>
+                There are several requirements for this method which are listed below:
+            </p>
+            <ul>
+                <li>Careful Site selections</li>
+                <li>Material used for collection</li>
+                <li>Insulation</li>
+                <li>Water collection troughs</li>
+                <li>Water Storage</li>
+                <li>Support Structures</li>
+                <li>Filtration</li>
+            </ul>
+        </div>
+        <div class="horizontal-line">
+            <p></p>
+        </div>
+        <div class="box3">
+            <h2><b>You can provide us your feedback or suggestions by clicking on the link given:</b><a href="feedback.html">CLICK HERE</a></h2>
+        </div>
+        <div class="horizontal-line">
+            <p></p>
+        </div>
+        <div class="footer">
+            <p>&copy;Rainwater Harvesting 2023</p>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
